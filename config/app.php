@@ -177,8 +177,6 @@ return [
         App\Providers\AzureStorageServiceProvider::class,
         App\Providers\EasySmsServiceProvider::class,
         App\Providers\ScoutServiceProvider::class,
-        Cms\Generator\GeneratorsServiceProvider::class,
-
 
     ],
 

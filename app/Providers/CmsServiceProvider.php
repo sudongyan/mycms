@@ -72,6 +72,11 @@ class CmsServiceProvider extends ServiceProvider
         $this->registerRouteMiddleware();
         
         $this->commands($this->commands);
+
+        if ($this->app->environment() !== 'local') {
+            $this->app->register(\Cms\Generator\GeneratorsServiceProvider::class);
+        }
+
 //        $this->schedule();
     }
 
