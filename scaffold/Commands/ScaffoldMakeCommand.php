@@ -34,7 +34,7 @@ class ScaffoldMakeCommand extends Command
      *
      * @var string
      */
-    protected $name = 'make:cms-administrator';
+    protected $name = 'cms:make-scaffold';
 
     /**
      * The console command description.

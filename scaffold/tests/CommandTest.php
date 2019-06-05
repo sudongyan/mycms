@@ -90,14 +90,14 @@ class CommandTest extends PHPUnit
 
     public function testExecuteCommand()
     {
-        Artisan::call('make:scaffold',
+        Artisan::call('cms:make-scaffold',
             [
                 'name' => 'Tweet',
                 '--schema' => 'title:string',
                 '--no-interaction'
             ]);
 
-        Artisan::call('make:scaffold',
+        Artisan::call('cms:make-scaffold',
             [
                 'name' => 'Tweet2',
                 '--schema' => 'title:string',
