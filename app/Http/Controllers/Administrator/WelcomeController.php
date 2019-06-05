@@ -29,7 +29,7 @@ class WelcomeController extends Controller
      * 仪表盘
      * @return mixed
      */
-    public function dashboard(){
+    public function dashboard(Request $request){
         return backend_view("dashboard");
     }
 

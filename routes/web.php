@@ -33,7 +33,8 @@ Route::group([ 'middleware' => ['cms.frontend'], ], function () {
 Route::group([ 'middleware' => ['cms.frontend'], ], function () {
     # 前台所有URL必须加入 navigation 参数,否则面包屑无法正常使用
     # 站点首页
-    Route::get('/', 'WelcomeController@index')->name('welcome');
+    // Route::get('/', 'WelcomeController@index')->name('welcome');
+    Route::get('/', 'WelcomeController@home')->name('home');
     Route::get('index.html', 'WelcomeController@index')->name('index');
 
     # 栏目聚合页
@@ -60,7 +61,6 @@ Route::group([ 'middleware' => ['cms.frontend'], ], function () {
     # 自定义表单
     Route::get('form/show_{navigation}_{type}.html', 'FormController@index')->name('form.index');
     Route::post('form/{type}.html', 'FormController@store')->name('form.store');
-
     # 搜索页面
     Route::get('search', 'SearchController@index')->name('search');
 

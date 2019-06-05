@@ -7,7 +7,7 @@
  */
 
 return [
-    'desktop' => 'customize',
+    'desktop' => 'pc',
     'mobile' => 'customize', // default mobile
 
     'template' => [

@@ -29,6 +29,11 @@ class WelcomeController extends Controller
         return frontend_view('welcome');
     }
 
+    public function home()
+    {
+        return frontend_view('home');
+    }
+
     /**
      * 关于我们
      */
